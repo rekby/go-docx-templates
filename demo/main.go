@@ -2,7 +2,7 @@ package main
 
 import (
     "fmt"    
-    "github.com/legion-zver/go-docx-templates"
+    "github.com/rekby/go-docx-templates"
 )
 
 type TestStruct struct {

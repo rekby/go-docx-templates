@@ -3,7 +3,7 @@ package docxt
 import (
     "io"
     "errors"
-    "github.com/legion-zver/go-docx-templates/docx"
+    "github.com/rekby/go-docx-templates/docx"
 )
 
 // DocxTemplateFile - файл шаблонизатора

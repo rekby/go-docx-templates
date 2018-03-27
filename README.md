@@ -9,7 +9,7 @@ Thanks to `github.com/aymerick/raymond` for useful libs.
 ## Installation
 
 ```
-go get -u github.com/legion-zver/go-docx-templates
+go get -u github.com/rekby/go-docx-templates
 ```
 
 ## Usage (demo)
@@ -25,7 +25,7 @@ package main
 
 import (
     "fmt"    
-    "github.com/legion-zver/go-docx-templates"
+    "github.com/rekby/go-docx-templates"
 )
 
 type TestStruct struct {
