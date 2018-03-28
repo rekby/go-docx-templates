@@ -280,11 +280,14 @@ func renderRow(row *TableRow, v interface{}) error {
 
 // Модифицируем текст шаблона
 func modeTemplateText(tpl string) string {
+    // Замена точек мешает проходить по полям структуры, остальное не меняем т.к. явное лучше не явного.
+    // не будем скрывать от внешнего что мы используем Raymond-шаблонизатор и игнорировать HTML-Escape будем явно.
     //fmt.Println("Mode: ", tpl)    
-    tpl = strings.Replace(tpl, "{{", "{{{", -1)
-	tpl = strings.Replace(tpl, "}}", "}}}", -1)
-    tpl = strings.Replace(tpl,".","_",-1)
-    return strings.Replace(tpl,":length","_length",-1) 
+    //tpl = strings.Replace(tpl, "{{", "{{{", -1)
+	//tpl = strings.Replace(tpl, "}}", "}}}", -1)
+    //tpl = strings.Replace(tpl,".","_",-1)
+    //return strings.Replace(tpl,":length","_length",-1)
+    return tpl
 }
 
 // haveArrayInRow - содержится ли массив в строке
